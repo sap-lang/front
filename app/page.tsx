@@ -11,12 +11,12 @@ const HeroSection = dynamic(() => import('./components/HeroSection').then((mod) 
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-600 to-blue-900 text-white">
+    <div className="transition-all min-h-screen bg-gradient-to-br from-blue-600 to-blue-900 text-white">
       <Header />
       <div className="pt-16">
       <HeroSection />
-      <NewsSection />
       <CodeSection />
+      <NewsSection />
       <UseCasesSection />
       <SponserSection />
       <CTASection />

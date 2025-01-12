@@ -9,7 +9,7 @@ interface SponserLogoProps {
 
 export function SponserLogo({ name, comment, logo }: SponserLogoProps) {
   return (
-    <Card className="bg-white shadow-md">
+    <Card className="bg-white shadow-md hover:shadow-lg">
       <CardContent className="flex items-center gap-4 p-6">
         <Image
           src={logo || "/SAP_trans_bg.png"}

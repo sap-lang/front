@@ -6,6 +6,18 @@ import { CodeNavBar } from "./CodeNavBar"
 
 const SapExamples = [
   {
+    id: 'pattern',
+    title: 'Pattern Matching',
+    code: `
+(^[a,b,c] ?= [1,2,3]) ? 
+  {format "{} {} {}" a b c |> puts} : 
+  {puts "what?"}
+
+(^{a,b,c} ?= {a:1, b:2, c:3}) ? 
+  {format "{} {} {}" a b c |> puts} :
+  {puts "what?"}    
+`
+  }, {
     id: 'hello-world',
     title: 'Hello World',
     code: `
@@ -90,32 +102,20 @@ puts cont
 puts (1 + 1)    
 `
   },
-  {
-    id: 'pattern',
-    title: 'Pattern Matching',
-    code: `
-(^[a,b,c] ?= [1,2,3]) ? 
-  {format "{} {} {}" a b c |> puts} : 
-  {puts "what?"}
 
-(^{a,b,c} ?= {a:1, b:2, c:3}) ? 
-  {format "{} {} {}" a b c |> puts} :
-  {puts "what?"}    
-`
-  }
 ]
 
 export function CodeSection() {
   const [activeExample, setActiveExample] = useState(SapExamples[0].id)
 
   return (
-    <section className="container mx-auto py-6">
-            <div className=" mb-12">
-                <h2 className="text-3xl font-bold text-white mb-4">Why Sap-Lang?</h2>
-                <p className="text-blue-100 text-lg"> Simple is More, thats the ethic of SAP. </p>
-            </div>
+    <section className="container mx-auto pb-24">
+      <div className=" mb-12">
+        <h2 className="text-3xl font-bold text-white mb-4">Why Sap-Lang?</h2>
+        <p className="text-blue-100 text-lg"> Simple is More, thats the ethic of SAP. </p>
+      </div>
       <div className="flex flex-col lg:flex-row gap-8">
-      <CodeNavBar
+        <CodeNavBar
           examples={SapExamples}
           activeExample={activeExample}
           onExampleChange={setActiveExample}

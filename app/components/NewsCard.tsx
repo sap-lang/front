@@ -3,12 +3,12 @@ import Image from "next/image"
 
 export function NewsCard() {
   return (
-    <Card className="bg-white text-blue-900 shadow-md">
+    <Card className="shadow-md hover:shadow-lg bg-white text-blue-900">
       <CardHeader>
         <Image
           src="/SAP_trans_bg.png"
-          width={300}
-          height={150}
+          width={100}
+          height={100}
           alt="News thumbnail"
           className="rounded-lg"
         />
