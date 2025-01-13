@@ -1,12 +1,7 @@
-import { Globe, Terminal, Code, Settings, MoreHorizontal, Rabbit, Pi, Download, Truck, Languages } from 'lucide-react'
-import { Card, CardContent, CardFooter, CardHeader } from "./ui/card"
+import { Globe, Settings, Rabbit, Pi, Truck, Languages } from 'lucide-react'
+import { Card, CardFooter, CardHeader } from "./ui/card"
 import { Button } from "./ui/button"
 import Link from 'next/link'
-
-interface Package {
-    name: string
-    link: string
-}
 
 interface AdvantagesCard {
     icon: React.ReactNode
