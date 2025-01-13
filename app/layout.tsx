@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph:{
     title: "The Sap-Lang programming language",
     url: "https://sap-lang.org",
-    description: "The Sap-Lang programming language",
+    description: "SAP Language is a new programming language that is designed to be simple, intuitive, and powerful. It is designed to be a general-purpose language that can be used for a wide range of applications, from simple scripts to complex applications.",
     images: [
       {
         url: "https://sap-lang.org/SAP.png",
