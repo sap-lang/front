@@ -27,7 +27,8 @@ export const metadata: Metadata = {
       {
         url: "https://sap-lang.org/SAP.png",
       }
-    ]
+    ],
+    tags: ["programming", "language", "sap-lang"]
   }
   // description: "the Sap-Lang programming language",
 };
