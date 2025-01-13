@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html>
       <body
-        className={`${fontSans.className} ${fontMono.className} antialiased`}
+        className={`w-[95%] md:w-full mx-auto ${fontSans.className} ${fontMono.className} antialiased transition-all min-h-screen bg-gradient-to-br from-blue-600 to-blue-900 text-white  overflow-x-hidden`}
       >
         {children}
       </body>

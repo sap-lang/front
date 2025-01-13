@@ -109,7 +109,7 @@ export function CodeSection() {
   const [activeExample, setActiveExample] = useState(SapExamples[0].id)
 
   return (
-    <section className="container mx-auto pb-24">
+    <section className="pt-20 md:pt-0 container w-[95%] md:w-full mx-auto pb-24">
       <div className=" mb-12">
         <h2 className="text-3xl font-bold text-white mb-4">Why Sap-Lang?</h2>
         <p className="text-blue-100 text-lg"> Simple is More, thats the ethic of SAP. </p>

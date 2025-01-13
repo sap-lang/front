@@ -7,7 +7,7 @@ import { SapModel } from './Model3D'
 
 export function HeroSection() {
   return (
-    <section className="container lg:w-[60%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <section className="container lg:w-[60%] w-[95%] md:w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div className="flex flex-col justify-center">
         <h1 className="m-auto mb-4 text-6xl font-bold text-white">Sap-Lang</h1>
         <h3 className="m-auto mb-2 text-2xl text-blue-100">Simple And Powerful</h3>

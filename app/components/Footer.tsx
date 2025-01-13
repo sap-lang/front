@@ -4,7 +4,7 @@ import Image from "next/image"
 export function Footer() {
   return (
     <footer className="border-t border-blue-200 bg-white py-8">
-      <div className="container mx-auto">
+      <div className="container w-[95%] md:w-full mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Image
@@ -16,7 +16,7 @@ export function Footer() {
             />
             <span className="text-sm text-blue-400">© 2024-2025 Sap-Lang</span>
           </div>
-          <div className="flex gap-6">
+          <div className="hidden md:flex gap-6">
             <Link href="#" className="text-blue-400 hover:text-white">Twitter</Link>
             <Link href="#" className="text-blue-400 hover:text-white">GitHub</Link>
             <Link href="#" className="text-blue-400 hover:text-white">Discord</Link>

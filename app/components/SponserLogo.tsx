@@ -16,7 +16,7 @@ export function SponserLogo({ name, comment, logo }: SponserLogoProps) {
           width={40}
           height={40}
           alt={`${name} logo`}
-          className="h-10 w-10"
+          className="hidden md:flex h-10 w-10"
         />
         <div>
           <h3 className="font-semibold text-blue-900">{name}</h3>
