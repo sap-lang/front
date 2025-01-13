@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react"
+
 import "./globals.css";
 
 import { IBM_Plex_Sans } from 'next/font/google'
@@ -29,6 +32,8 @@ export default function RootLayout({
       <body
         className={`w-[95%] md:w-full mx-auto ${fontSans.className} ${fontMono.className} antialiased transition-all min-h-screen bg-gradient-to-br from-blue-600 to-blue-900 text-white  overflow-x-hidden`}
       >
+        <SpeedInsights />
+        <Analytics />
         {children}
       </body>
     </html>
