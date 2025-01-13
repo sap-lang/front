@@ -19,6 +19,16 @@ const fontMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: "The Sap-Lang programming language",
+  openGraph:{
+    title: "The Sap-Lang programming language",
+    url: "https://sap-lang.org",
+    description: "The Sap-Lang programming language",
+    images: [
+      {
+        url: "https://sap-lang.org/SAP.png",
+      }
+    ]
+  }
   // description: "the Sap-Lang programming language",
 };
 
